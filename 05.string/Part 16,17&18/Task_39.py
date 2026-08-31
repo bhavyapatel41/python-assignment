@@ -1,0 +1,13 @@
+# --- Task 39: Sentence Analyzer ---
+sentence = input("Enter a sentence: ").strip()
+print("Original:", sentence)
+print("Character count:", len(sentence))
+print("Word count:", len(sentence.split()))
+print("First char:", sentence[0] if sentence else "")
+print("Last char:", sentence[-1] if sentence else "")
+print("Upper:", sentence.upper())
+print("Lower:", sentence.lower())
+print("Title:", sentence.title())
+print("Contains 'Python':", "Python" in sentence)
+char_to_count = input("Enter a character to count: ")
+print(f"'{char_to_count}' occurs {sentence.count(char_to_count)} times.")
