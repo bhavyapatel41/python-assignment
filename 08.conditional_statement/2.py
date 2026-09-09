@@ -4,11 +4,11 @@
 marks=int(input("Enter your marks : "))
 if marks>90:
     print("A")
-elif marks>75 and marks<89:
+elif marks>=75:
     print("B")
-elif marks>60 and marks<74:
+elif marks>=60:
     print("C")
-elif marks>40 and marks<59:
+elif marks>=40:
     print("D")
 else:
     print("F")
@@ -38,9 +38,9 @@ else:
 marks1=int(input("Enter your marks : "))
 if marks1>90:
     print("Excellent")
-elif marks1>75 and marks1<89:
+elif marks1>75:
     print("good")
-elif marks1>60 and marks1<74:
+elif marks1>60:
     print("pass")
 else:
     print("Fail")
