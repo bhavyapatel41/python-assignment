@@ -40,7 +40,7 @@ if withdrawal_amount>0:
 else:
     print("amount should be grater then zero")
 
-#23
+23
 
 username=input("Enter username : ")
 password=input("Enter password : ")
@@ -99,8 +99,28 @@ day=int(input("Enter day : "))
 month=int(input("Enter month : "))
 year=int(input("Enter year : "))
 
-# if month>=1 and month<=12:
-#     if month%2==0:
+if month>=1 and month<=12 and day>=1 and day <=31 :
+    if( month==1 or month==3 or month==5 or month==7 or month==8 or month==10 or month==12 )and day<=31:
+        print("valid")
+        print(f"{day}/{month}/{year}")
+    elif month==2:
+        if (year%400==0 or (year%4==0 and year%100!=0 ))and day<=29:
+            print("valid")
+            print(f"{day}/{month}/{year}")
+        else:
+            if(day<=28):
+                print("valid")
+                print(f"{day}/{month}/{year}")
+            else:
+                print("invalid")
+    else:
+         if(day<=30):
+            print("valid")
+            print(f"{day}/{month}/{year}")
+         else:
+             print("invalid")
+else:
+    print("invalid")
 
 
 #27
@@ -135,10 +155,18 @@ elif age1==age2 or age2==age3 or age3==age2:
 else:
      print("All three have the same age")
 
-29
-num1=int(input("Enter num1 : "))
-num2=int(input("Enter num2 : "))
-num3=int(input("Enter num3 : "))
+#29
+num1=int(input("Enter num1 : "))#3
+num2=int(input("Enter num2 : "))#4
+num3=int(input("Enter num3 : "))#5
+
+if (num1>num2 and num1<num3) or (num1<num2 and num1>num3):
+    print(num1)
+elif (num2 > num1 and num2 < num3) or (num2 < num1 and num2 > num3):
+    print(num2)
+else:
+    print(num3)
+
 
 #30
 student_age=int(input("Enter age : "))
