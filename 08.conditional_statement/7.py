@@ -53,9 +53,14 @@ units=int(input("Enter electricity bill units: "))
 if units>=0 and units<=100:
     print(f"bill : {5*units}")
 elif units>100 and units<=200:
-    print(f"bill : {7*units}")
+    first_hundard=units*5
+    remaining=(units-100)*7
+    print(f"bill : {first_hundard+remaining}")
 else:
-    print(f"bill : {10*units}")
+    first_hundard=units*5
+    second_hundard=units*7
+    remaining=(units-200)*10
+    print(f"bill : {first_hundard+second_hundard+remaining}")
 
 #17
 num1=int(input("Enter num 1 : "))
