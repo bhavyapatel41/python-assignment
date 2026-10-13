@@ -226,6 +226,8 @@ for i in range(1, 6):
         pass
     print(i)
 
+
+
 #32
 choice = int(input("Enter your choice: "))
 
@@ -278,3 +280,57 @@ else:
 
 #36
 
+arr=[1,-2,3,4]
+target=3
+for i in range(len(arr)):
+    if arr[i]<0:
+        continue
+    if arr[i]==target:
+        print("target founded")
+        break
+else:
+    print("target not found")
+
+#37
+arr=[1,-2,3,0,-1]
+
+for i in range(len(arr)):
+    if arr[i]==0:
+        continue
+    if arr[i]==-1:
+        break
+else:
+    print("All values processed")
+
+#38
+
+for row in range(1, 4):
+    for col in range(1, 4):
+        if col == 2:
+            continue
+        if row == 3:
+            break
+        print(row, col)
+    else:
+        print("Inner loop completed")
+
+
+#1 1
+#1 3
+#Inner loop completed
+#2 1
+#2 3
+#Inner loop completed
+
+#39
+
+arr=[1,2,34,-4,23,24]
+for i in range(len(arr)):
+    if arr[i]<0:
+        continue
+    if arr[i]%4==0 and arr[i]%6==0:
+        print("divisible by both 4 and 6 : ",arr[i])
+        break
+else:
+    print("no number divisible by both 4 and 6")
+   
